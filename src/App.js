@@ -1,6 +1,10 @@
 import React from 'react';
-import Chatbot from 'react-chatbot-kit';
 import './App.css';
+import Chatbot from 'react-chatbot-kit'
+
+import actionProvider from './ActionProvider'
+import messageParser from './MessageParser'
+import config from './Config'
 
 import config from "./config";
 import MessageParser from "./messageParser";
@@ -9,11 +13,9 @@ import ActionProvider from "./actionProvider";
 function App() {
   return (
     <div className="App">
-      <Chatbot
-        config={config}
-        messageParser={MessageParser}
-        actionProvider={ActionProvider}
-      />
+      <header className="App-header">
+        <Chatbot config={config} actionProvider={actionProvider}  messageParser={messageParser}/>
+      </header>
     </div>
   );
 }
