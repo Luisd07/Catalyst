@@ -6,10 +6,13 @@ const GeneralOptions = props => {
   const options = [
     {
       name: "Todos",
-      handler: props.actionProvider.handleTodo,
+      handler: props.actionProvider.handleTodoOptions,
       id: 1
     },
-    { name: "Team Overview", handler: props.actionProvider.handleTeamOverview, id: 2 },
+    { name: "Team Overview",
+     handler: props.actionProvider.handleTeamOverview,
+      id: 2 
+    },
     {
       name: "View Upcoming Events",
       handler: props.actionProvider.handleUpcomingEvents,
@@ -19,7 +22,7 @@ const GeneralOptions = props => {
       name: "Daily Outlook",
       handler: props.actionProvider.handleDailyOutlook,
       id: 5
-    }
+    },
   ];
   return <Options options={options} title="Options" {...props} />;
 };

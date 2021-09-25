@@ -6,6 +6,10 @@ import actionProvider from './ActionProvider'
 import messageParser from './MessageParser'
 import config from './Config'
 
+import config from "./config";
+import MessageParser from "./messageParser";
+import ActionProvider from "./actionProvider";
+
 function App() {
   return (
     <div className="App">
