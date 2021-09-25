@@ -1,13 +1,46 @@
 class MessageParser {
-    constructor(actionProvider, state) {
-      this.actionProvider = actionProvider;
-      this.state = state;
-    }
-  
-    parse(message) {
-      console.log(message)
-    }
+  constructor(actionProvider) {
+    this.actionProvider = actionProvider;
   }
-  
-  export default MessageParser;
-  
+
+  parse(message) {
+    if (
+      message.includes("options") ||
+      message.includes("help") ||
+      message.includes("do for me")
+    ) {
+      return this.actionProvider.handleOptions({ withAvatar: true });
+    }
+
+    if (
+      message.includes("todo") ||
+      message.includes("To-do") ||
+      message.includes("to-do") ||
+      message.includes("todos") ||
+      message.includes("to-dos")
+    ) {
+      return this.actionProvider.handleToDos();
+    }
+
+    if (message.includes("parking") || message.includes("parkering")) {
+      return this.actionProvider.handleParkingOptions();
+    }
+
+    if (message.includes("flights") || message.includes("flight")) {
+      return this.actionProvider.handleFlightsChoice();
+    }
+
+    if (message.includes("airport")) {
+      return this.actionProvider.handleAirport();
+    }
+
+    return this.actionProvider.handleOptions({ withAvatar: true });
+  }
+
+  containsFlightId = (message) => {
+    const regexp = /[A-Z]{2,}[0-9]{2,}/gim;
+    return message.match(regexp);
+  };
+}
+
+export default MessageParser;
