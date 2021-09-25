@@ -11,9 +11,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Chatbot config={config} actionProvider={actionProvider}  messageParser={messageParser}/>
-        <p>
-          Catalyst
-        </p>
       </header>
     </div>
   );
