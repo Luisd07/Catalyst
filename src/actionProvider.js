@@ -30,7 +30,7 @@ class ActionProvider {
     };
   
     handleDefault = () => {
-      const messages = this.createChatBotMessage("Humans are confusing when they talk like this. Here are some options! Meow", 
+      const messages = this.createChatBotMessage("Something isnt right, please try again!", 
       { withAvatar: true, }
       
       );
@@ -49,6 +49,18 @@ class ActionProvider {
             }
         );
 
+        this.addMessageToBotState(messages)
+    };
+
+    handleProjectUpdate = () => {
+        const messages =this.createChatBotMessage(
+            "Here are you project options!",
+            {
+                widget: "ProjectUpdate",
+                loading: true,
+                terminateloading: true,
+            }
+        );
         this.addMessageToBotState(messages)
     };
   

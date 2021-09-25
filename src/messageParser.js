@@ -30,8 +30,12 @@ class MessageParser {
       return this.actionProvider.handleTeamOverview();
     }
 
-    if (message.includes("flights") || message.includes("flight")) {
-      return this.actionProvider.handleFlightsChoice();
+    if (
+        message.includes("project update") ||
+        message.includes("project") ||
+        message.includes("update")
+        ) {
+      return this.actionProvider.handleProjectUpdate();
     }
 
     if (message.includes("airport")) {
@@ -40,11 +44,6 @@ class MessageParser {
 
     return this.actionProvider.handleOptions({ withAvatar: true });
   }
-
-  containsFlightId = (message) => {
-    const regexp = /[A-Z]{2,}[0-9]{2,}/gim;
-    return message.match(regexp);
-  };
 }
 
 export default MessageParser;

@@ -23,6 +23,11 @@ const GeneralOptions = props => {
       handler: props.actionProvider.handleDailyOutlook,
       id: 5
     },
+    {
+        name: "Project Update",
+        handler: props.actionProvider.handleProjectUpdate,
+        id: 5
+      },
   ];
   return <Options options={options} title="Options" {...props} />;
 };
