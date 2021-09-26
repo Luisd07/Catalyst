@@ -38,8 +38,12 @@ class MessageParser {
       return this.actionProvider.handleProjectUpdate();
     }
 
-    if (message.includes("airport")) {
-      return this.actionProvider.handleAirport();
+    if (
+        message.includes("upcoming events") ||
+        message.includes("aupcoming") ||
+        message.includes("events")
+        ) {
+      return this.actionProvider.handlerUpcomingEvents();
     }
 
     return this.actionProvider.handleOptions({ withAvatar: true });

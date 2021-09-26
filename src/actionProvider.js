@@ -61,6 +61,19 @@ class ActionProvider {
                 terminateloading: true,
             }
         );
+        
+        this.addMessageToBotState(messages)
+    };
+
+    handleUpcomingEvents = () => {
+        const messages = this.createChatBotMessage(
+            "Upcoming event options",
+            {
+                widget: "UpcomingEvents",
+                loading: true,
+                terminateloading: true,
+            }
+        );
         this.addMessageToBotState(messages)
     };
   

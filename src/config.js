@@ -6,6 +6,7 @@ import GeneralOptions from './components/GeneralOptions/GeneralOptions';
 import TeamOverview from './components/TeamOverview/TeamOverview';
 import ProjectUpdate from './components/ProjectUpdate/ProjectUpdate';
 
+import UpcomingEvents from './components/UpcomingEvents/UpcomingEvents';
 
 const config = {
   botName: "Kat",
@@ -47,6 +48,10 @@ const config = {
     {
       widgetName: "ProjectUpdate",
       widgetFunc: (props) => <ProjectUpdate {...props} />,
+    },
+    {
+      widgetName: "UpcomingEvents",
+      widgetFunc: (props) => <UpcomingEvents {...props} />,
     },
   ],
 };
