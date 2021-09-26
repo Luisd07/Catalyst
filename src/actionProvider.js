@@ -61,7 +61,7 @@ class ActionProvider {
                 terminateloading: true,
             }
         );
-        
+
         this.addMessageToBotState(messages)
     };
 
