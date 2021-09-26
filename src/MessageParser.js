@@ -19,7 +19,7 @@ class MessageParser {
       message.includes("todos") ||
       message.includes("to-dos")
     ) {
-      return this.actionProvider.handleToDos();
+      return this.actionProvider.handleToDoOptions();
     }
 
     if (
