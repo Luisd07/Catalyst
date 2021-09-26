@@ -22,25 +22,32 @@ class MessageParser {
       return this.actionProvider.handleToDos();
     }
 
-    if (message.includes("parking") || message.includes("parkering")) {
-      return this.actionProvider.handleParkingOptions();
+    if (
+      message.includes("upcoming events") || 
+      message.includes("upcoming") ||
+      message.includes("events")
+      ) {
+      return this.actionProvider.handleUpcomingEvents();
     }
 
-    if (message.includes("flights") || message.includes("flight")) {
-      return this.actionProvider.handleFlightsChoice();
+    if (
+      message.includes("project update") ||
+      message.includes("project") ||
+      message.includes("update")
+      ) {
+      return this.actionProvider.handleProjectUpdate();
     }
 
-    if (message.includes("airport")) {
-      return this.actionProvider.handleAirport();
+    if (
+      message.includes("team overview") ||
+      message.includes("team") ||
+      message.includes("overview")
+      ) {
+      return this.actionProvider.handleTeamOverview();
     }
 
     return this.actionProvider.handleOptions({ withAvatar: true });
   }
-
-  containsFlightId = (message) => {
-    const regexp = /[A-Z]{2,}[0-9]{2,}/gim;
-    return message.match(regexp);
-  };
 }
 
 export default MessageParser;

@@ -52,7 +52,7 @@ class ActionProvider {
 
     handleProjectUpdate = () => {
         const messages =this.createChatBotMessage(
-            "Here are you project options!",
+            "Here are your project options!",
             {
                 widget: "ProjectUpdate",
                 loading: true,
