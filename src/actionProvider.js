@@ -1,6 +1,4 @@
 class ActionProvider {
-    // The action provider receives createChatBotMessage which you can use to define the bots response, and 
-    // the setState function that allows for manipulating the bots internal state.
     constructor(createChatBotMessage, setStateFunc, createClientMessage) {
       this.createChatBotMessage = createChatBotMessage;
       this.setState = setStateFunc;
