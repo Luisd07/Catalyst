@@ -1,70 +1,100 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    UPE
 
-## Available Scripts
+Inspiration
 
-In the project directory, you can run:
+    https://creativemarket.com/blog/10-websites-to-increase-productivity-in-2014
+    https://the1thing.com/2016/06/07/how-these-colors-affect-your-productivity/
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Minimalist page design inspiration:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    https://www.creativebloq.com/web-design/25-websites-use-minimalism-91516685
+    https://www.webfx.com/blog/web-design/minimalist-website-designs/
+    https://colorlib.com/wp/fullscreen-website-templates/
 
-### `npm test`
+Possible Project Goals:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Productivity Booster App by Citrix
+Description: We believe that people should be able to work and study from anywhere, at any time and on any device. With this philosophy in mind, build an application that will boost your team's productivity and ability to collaborate.
 
-### `npm run build`
+Conversational AI Chat Bot by AutoNation
+Description: We want you to build an application that can receive SMS messages and respond based on the context of the request.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Best Use of Notifications by Courier
+Description: Most innovative, fun, and or practical use of notifications using the Courier API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Best Use of Google Cloud by Google Cloud
+Description: Use of any Google Cloud product in your project in order to qualify
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Hack for Accessibility by Facebook
+Description: Help make the world a better place by creating technology that is accessible for everyone, in the widest sense of the word.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Celine Ramirez
+Enter potential ideas
+UI/UX layout for productivity webpage
+Came up with name for website
+Minimalist interface
+Use colors to switch between user preferred productivity levels
+Changing chat bot color based on browser theme
+Steps:
+Drafting page layout and chatbot design with Canva
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Fiifi Godwyll
+Integrate Google Calendar for user 
+Integrate Google Translate
+Add Cat puns to Kat Bot
+STEPS
+Made starting page for app in canva
+Decided color palette
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+Luis
+Chatbot that user can ask for daily outlook, or to add certain tasks to the app.
+ If user says anything not recognized by the chat bot, Chat Bot will list all available options. (try-catch)
+Possibility of implementation of notifications for daily tasks etc.
+STEPS;
+Installed React.js framework for the website.
+Installed Chat bot with react.js framework.
+Program all of the changes into the chat bot.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Soham
+Steps:
+Made a overview for the UI/UX of the starting page of the website
 
-### Code Splitting
+Notifications
+	Possible Notifications
+Add sleep time, exercise time, and drink water. Send notifications for this.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Chat Bot
+	Available Options
+Catalyst App
+	Calendar
+Allow the user the option to link up their Google Calendar Cloud System, Catalyst will notify you if there are schedule conflicts with tasks that you enter by using conditionals.
+Color Pallette
+	Calm Pallette (Night Mode)
+Blue: To Increase Calmness and Boost Productivity
+Green: To Make People More Relaxed at Work
+Energy Pallette (Day Mode)
+Orange: To Raise Activity and Productivity Levels
+Yellow: To Get People Energized and Collaborating
+Purple: To Increase the Perception of Value
 
-### Analyzing the Bundle Size
+Bot GUI: Kat
+	Options:
+To do list
+Team overview
+Upcoming events
+Daily outlook
+Text Option: What are the updates on [Project Name]	
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+Name Ideas:
+Sunday
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Catalyst
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://fredrikoseberg.github.io/react-chatbot-kit-docs/
