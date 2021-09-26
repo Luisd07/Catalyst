@@ -5,43 +5,44 @@ class MessageParser {
 
   parse(message) {
     if (
-      message.includes("options") ||
-      message.includes("help") ||
-      message.includes("do for me")
+      message.toLowerCase().includes("options") ||
+      message.toLowerCase().includes("help") ||
+      message.toLowerCase().includes("do for me")
     ) {
       return this.actionProvider.handleOptions({ withAvatar: true });
     }
 
     if (
-      message.includes("todo") ||
-      message.includes("To-do") ||
-      message.includes("to-do") ||
-      message.includes("todos") ||
-      message.includes("to-dos")
+      message.toLowerCase().includes("todo") ||
+      message.toLowerCase().includes("to-do") ||
+      message.toLowerCase().includes("todos") ||
+      message.toLowerCase().includes("to-dos") ||
+      message.toLowerCase().includes("to do") ||
+      message.toLowerCase().includes("to dos") 
     ) {
       return this.actionProvider.handleToDoOptions();
     }
 
     if (
-      message.includes("upcoming events") || 
-      message.includes("upcoming") ||
-      message.includes("events")
+      message.toLowerCase().includes("upcoming events") || 
+      message.toLowerCase().includes("upcoming") ||
+      message.toLowerCase().includes("events")
       ) {
       return this.actionProvider.handleUpcomingEvents();
     }
 
     if (
-      message.includes("project update") ||
-      message.includes("project") ||
-      message.includes("update")
+      message.toLowerCase().includes("project update") ||
+      message.toLowerCase().includes("project") ||
+      message.toLowerCase().includes("update")
       ) {
       return this.actionProvider.handleProjectUpdate();
     }
 
     if (
-      message.includes("team overview") ||
-      message.includes("team") ||
-      message.includes("overview")
+      message.toLowerCase().includes("team overview") ||
+      message.toLowerCase().includes("team") ||
+      message.toLowerCase().includes("overview")
       ) {
       return this.actionProvider.handleTeamOverview();
     }

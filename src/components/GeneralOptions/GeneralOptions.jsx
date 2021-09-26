@@ -18,7 +18,7 @@ const GeneralOptions = props => {
     },
     { name: "Daily Outlook",
       handler: props.actionProvider.handleDailyOutlook,
-      id: 5
+      id: 4
     },
     { name: "Project Update",
       handler: props.actionProvider.handleProjectUpdate,

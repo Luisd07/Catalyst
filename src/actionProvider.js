@@ -5,7 +5,7 @@ class ActionProvider {
       this.createClientMessage = createClientMessage
     }
   
-    handleToDoOptions = () => {
+    handleTodoOptions = () => {
         const messages = this.createChatBotMessage(
             "What would you like to do with your To-Dos?",
             {
