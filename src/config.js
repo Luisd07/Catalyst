@@ -1,9 +1,9 @@
 import React from 'react';
 import { createChatBotMessage } from "react-chatbot-kit";
+
 import TodoOptions from './components/TodoOptions/TodoOptions';
 import GeneralOptions from './components/GeneralOptions/GeneralOptions';
 import TeamOverview from './components/TeamOverview/TeamOverview';
-import Options from './components/Options/Options';
 import ProjectUpdate from './components/ProjectUpdate/ProjectUpdate';
 
 

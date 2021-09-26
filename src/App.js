@@ -9,11 +9,13 @@ import ActionProvider from "./actionProvider";
 function App() {
   return (
     <div className="App">
+      <header className="App-header">
       <Chatbot
         config={config}
         messageParser={MessageParser}
         actionProvider={ActionProvider}
       />
+      </header>
     </div>
   );
 }
