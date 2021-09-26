@@ -4,8 +4,7 @@ import Options from "../Options/Options";
 
 const GeneralOptions = props => {
   const options = [
-    {
-      name: "Todos",
+    { name: "Todos",
       handler: props.actionProvider.handleTodoOptions,
       id: 1
     },
@@ -13,14 +12,16 @@ const GeneralOptions = props => {
      handler: props.actionProvider.handleTeamOverview,
       id: 2 
     },
-    {
-      name: "View Upcoming Events",
+    { name: "View Upcoming Events",
       handler: props.actionProvider.handleUpcomingEvents,
       id: 3
     },
-    {
-      name: "Daily Outlook",
+    { name: "Daily Outlook",
       handler: props.actionProvider.handleDailyOutlook,
+      id: 5
+    },
+    { name: "Project Update",
+      handler: props.actionProvider.handleProjectUpdate,
       id: 5
     },
   ];
