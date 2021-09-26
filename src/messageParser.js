@@ -20,7 +20,7 @@ class MessageParser {
       message.toLowerCase().includes("to do") ||
       message.toLowerCase().includes("to dos") 
     ) {
-      return this.actionProvider.handleToDoOptions();
+      return this.actionProvider.handleTodoOptions();
     }
 
     if (

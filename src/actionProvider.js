@@ -65,7 +65,7 @@ class ActionProvider {
 
     handleUpcomingEvents = () => {
         const messages = this.createChatBotMessage(
-            "Upcoming event options",
+            "Upcoming event options :-3",
             {
                 widget: "UpcomingEvents",
                 loading: true,
